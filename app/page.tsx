@@ -63,19 +63,6 @@ export default function Chat() {
     session.sendMessage(prompt);
   };
 
-  const refreshDesktop = async () => {
-    try {
-      session.setInitializing(true);
-      const snapshot = session.getSnapshot();
-      const { streamUrl, id } = await getDesktopURL(snapshot.sandboxId || undefined);
-      session.updateDesktop({ streamUrl, sandboxId: id });
-    } catch (err) {
-      console.error("Failed to refresh desktop:", err);
-    } finally {
-      session.setInitializing(false);
-    }
-  };
-
   useEffect(() => {
     const init = async () => {
       try {

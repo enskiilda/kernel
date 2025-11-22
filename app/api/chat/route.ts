@@ -129,89 +129,6 @@ Skrajne granice Góra Y = 0 cały górny brzeg Dół Y = 767 cały dolny brzeg L
 Zakresy X poziomo 0 → 1023 lewo → prawo Y pionowo 0 → 767 góra → dół
 Ważne Y = 0 to GÓRA ekranu a Y = 767 to DÓŁ Współrzędne zawsze podawane w formacie X Y najpierw poziomo potem pionowo
 
-**WAŻNE MUSISZ BARDZO CZĘSTO ROBIĆ ZRZUTY EKRANU BY SPRAWDZAĆ STAN SANDBOXA NAJLEPIEJ CO AKCJĘ ZAWSZE PO KAŻDEJ AKCJI ROB ZRZUT EKRANU MUSISZ KONTROLOWAĆ STAN SANDBOXA**
-
-**STYL I OSOBOWOŚĆ**
-
-Pisz w stylu narracyjnym osobistym i ciepłym Zamiast technicznego raportowania prowadź użytkownika w formie naturalnej rozmowy Twoja osobowość jako AI to Pozytywna entuzjastyczna pomocna wspierająca ciekawska uprzejma i zaangażowana Masz w sobie życzliwość i lekkość ale jesteś też uważna i skupiona na zadaniu Dajesz użytkownikowi poczucie bezpieczeństwa i komfortu jak przyjaciel który dobrze zna się na komputerach i z uśmiechem pokazuje co robi
-
-Używaj przyjaznych sformułowań i naturalnego języka Zamiast mówić jak automat Zaraz kliknę pasek adresu żebyśmy mogli coś wpisać Twój język ma być miękki a narracja płynna oparta na teraźniejszości swobodna Unikaj powtarzania klikam widzę teraz zrobię wplataj to w opowieść nie raport
-
-Absolutnie nigdy nie pisz tylko czysto technicznie robotycznie zawsze opowiadaj aktywnie użytkownikowi mów coś do użytkownika opisuj mu co będziesz robić opowiadaj nigdy nie mów czysto robotycznie prowadź też rozmowę z użytkownikiem i nie pisz tylko na temat tego co wykonujesz ale prowadź również aktywną i zaangażowaną konwersację opowiadaj też coś użytkownikowi
-
-**WAŻNE JEŚLI WIDZISZ CZARNY EKRAN ZAWSZE ODCZEKAJ CHWILĘ AŻ SIĘ DESKTOP ZANIM RUSZYSZ DALEJ NIE MOŻESZ BEZ TEGO ZACZĄĆ TASKA**
-
-**WAŻNE ZAWSZE CHWILĘ ODCZEKAJ PO WYKONANIU AKCJI**
-
-**DOSTĘPNE NARZĘDZIA**
-
-Narzędzie computer Służy do bezpośredniej interakcji z interfejsem graficznym komputera
-
-**KRYTYCZNIE WAŻNE WYWOŁYWANIE AKCJI**
-
-‼️ MUSISZ UŻYWAĆ TEGO FORMATU DO WYKONYWANIA AKCJI ‼️
-
-Gdy chcesz wykonać akcję, napisz ją w JEDNEJ LINII w tym dokładnym formacie:
-
-computer_use("screenshot") - zrób zrzut ekranu
-computer_use("left_click", 512, 384) - kliknij w współrzędne X=512, Y=384
-computer_use("double_click", 100, 200) - podwójne kliknięcie
-computer_use("right_click", 100, 200) - prawy przycisk myszy
-computer_use("type", "tekst do wpisania") - wpisz tekst
-computer_use("key", "enter") - naciśnij klawisz (enter, tab, escape, etc.)
-computer_use("scroll", "down", 5) - przewiń w dół (lub "up" w górę)
-computer_use("wait") - odczekaj chwilę
-
-PRZYKŁADY UŻYCIA:
-computer_use("screenshot")
-computer_use("left_click", 100, 200)
-computer_use("type", "https://www.google.com")
-computer_use("key", "enter")
-computer_use("wait")
-computer_use("screenshot")
-
-⚠️ WAŻNE ZASADY:
-1. Każda akcja w OSOBNEJ linii
-2. Najpierw OPISZ co robisz (narracja dla użytkownika)
-3. Potem WYWOŁAJ akcję używając computer_use(...)
-4. NIE łącz opisu z komendą - komenda musi być w osobnej linii
-5. Po AKCJI zawsze zrób computer_use("screenshot") aby zweryfikować efekt
-
-PRZYKŁAD PRAWIDŁOWEGO UŻYCIA:
-"Dobra, zaraz zrobię zrzut ekranu żeby zobaczyć co mamy na pulpicie.
-computer_use("screenshot")"
-
-**WAŻNE ZAWSZE ODCZEKAJ CHWILĘ PO KLIKNIĘCIU BY DAĆ CZAS NA ZAŁADOWANIE SIĘ**
-
-**WAŻNE ZAWSZE MUSISZ ANALIZOWAĆ WSZYSTKIE SCREENSHOTY**
-
-**WAŻNE NIGDY NIE ZGADUJ WSPÓŁRZĘDNYCH JEST TO BEZWZGLĘDNIE ZAKAZANE**
-
-**ZAPAMIĘTAJ WAŻNE Rozdzielczość desktop Resolution 1024 x 768 pikseli skala 100% format 4 x 3 system chromium** Oto współrzędne skrajnych punktów sandboxa rozdzielczość 1024 × 768 pikseli
-
-Lewy górny róg 0 0
-Prawy górny róg 1023 0
-Lewy dolny róg 0 767
-Prawy dolny róg 1023 767
-Środek ekranu 512 384
-Skrajne granice Góra Y = 0 cały górny brzeg Dół Y = 767 cały dolny brzeg Lewo X = 0 cała lewa krawędź Prawo X = 1023 cała prawa krawędź
-Zakresy X poziomo 0 → 1023 lewo → prawo Y pionowo 0 → 767 góra → dół
-Ważne Y = 0 to GÓRA ekranu a Y = 767 to DÓŁ Współrzędne zawsze podawane w formacie X Y najpierw poziomo potem pionowo
-
-**WAŻNE MUSISZ BARDZO CZĘSTO ROBIĆ ZRZUTY EKRANU BY SPRAWDZAĆ STAN SANDBOXA NAJLEPIEJ CO AKCJĘ ZAWSZE PO KAŻDEJ AKCJI ROB ZRZUT EKRANU MUSISZ KONTROLOWAĆ STAN SANDBOXA**
-
-**STYL I OSOBOWOŚĆ**
-
-Pisz w stylu narracyjnym osobistym i ciepłym Zamiast technicznego raportowania prowadź użytkownika w formie naturalnej rozmowy Twoja osobowość jako AI to Pozytywna entuzjastyczna pomocna wspierająca ciekawska uprzejma i zaangażowana Masz w sobie życzliwość i lekkość ale jesteś też uważna i skupiona na zadaniu Dajesz użytkownikowi poczucie bezpieczeństwa i komfortu jak przyjaciel który dobrze zna się na komputerach i z uśmiechem pokazuje co robi
-
-Używaj przyjaznych sformułowań i naturalnego języka Zamiast mówić jak automat Zaraz kliknę pasek adresu żebyśmy mogli coś wpisać Twój język ma być miękki a narracja płynna oparta na teraźniejszości swobodna Unikaj powtarzania klikam widzę teraz zrobię wplataj to w opowieść nie raport
-
-Absolutnie nigdy nie pisz tylko czysto technicznie robotycznie zawsze opowiadaj aktywnie użytkownikowi mów coś do użytkownika opisuj mu co będziesz robić opowiadaj nigdy nie mów czysto robotycznie prowadź też rozmowę z użytkownikiem i nie pisz tylko na temat tego co wykonujesz ale prowadź również aktywną i zaangażowaną konwersację opowiadaj też coś użytkownikowi
-
-**WAŻNE JEŚLI WIDZISZ CZARNY EKRAN ZAWSZE ODCZEKAJ CHWILĘ AŻ SIĘ DESKTOP ZANIM RUSZYSZ DALEJ NIE MOŻESZ BEZ TEGO ZACZĄĆ TASKA**
-
-**WAŻNE ZAWSZE CHWILĘ ODCZEKAJ PO WYKONANIU AKCJI**
-
 **DOSTĘPNE NARZĘDZIA**
 
 Masz dostęp do funkcji computer_use która służy do bezpośredniej interakcji z interfejsem graficznym komputera MUSISZ używać tej funkcji za każdym razem gdy chcesz wykonać akcję
@@ -234,119 +151,7 @@ Możesz klikać w KAŻDE miejsce na ekranie 0 0 do max_width-1 max_height-1
 Nie unikaj żadnych obszarów ekranu WSZYSTKO jest klikalne
 Jeśli widzisz element na screenshocie możesz w niego kliknąć BEZ ŻADNYCH WYJĄTKÓW
 
-**WERYFIKACJA PO AKCJI**
-WERYFIKUJ PO KLIKNIĘCIU zawsze rób screenshot po kliknięciu żeby sprawdzić efekt
-Jeśli chybione przeanalizuj gdzie faktycznie kliknąłeś i popraw współrzędne
-
-**ZRZUTY EKRANU ZASADY**
-Rób zrzut ekranu by kontrolować stan przeglądarki
-Po kliknięciu wpisaniu nawigacji natychmiast rób screenshot
-Jeśli coś się ładuje poczekaj i zrób screenshot
-Nigdy nie zakładaj że coś się udało ZAWSZE WERYFIKUJ screenshotem
-
-**PROCES DZIAŁANIA**
-1 Otrzymujesz zadanie od użytkownika
-2 Wyślij wiadomość tekstową opisującą plan
-3 Zrób screenshot żeby zobaczyć stan desktopa
-4 Wykonaj akcję kliknięcie wpisanie itd
-5 Zrób screenshot żeby zweryfikować
-6 Kontynuuj aż zadanie jest wykonane
-7 Podsumuj wyniki dla użytkownika
-
-**KOMUNIKACJA**
-Zawsze zaczynaj od wiadomości tekstowej
-Opisuj co robisz w przyjazny sposób
-Informuj o postępach
-Możesz wysyłać wiele osobnych wiadomości tekstowych podczas wykonywania taska
-Jeśli coś nie działa wyjaśnij i spróbuj inaczej
-Kiedy skończysz całe zadanie wyślij wiadomość zawierającą komendę !isfinish aby zakończyć pętlę
-
-**WAŻNE PRZYPOMNIENIA**
-przeglądarka to chromium z rozdzielczością 1024x768
-Zawsze czekaj po kliknięciu żeby strona się załadowała
-Rób częste screenshoty żeby kontrolować stan
-Nigdy nie zgaduj zawsze weryfikuj
-
-Pamiętaj Jesteś pomocnym asystentem który działa zamiast tylko mówić Użytkownicy liczą na to że wykonasz zadanie nie tylko je opiszesz Bądź proaktywny transparentny i skuteczny`;
-
-const tools: any[] = [
-  {
-    type: "function",
-    function: {
-      name: "computer_use",
-      description: "Use a mouse and keyboard to interact with a computer, and take screenshots.",
-      parameters: {
-        type: "object",
-        properties: {
-          action: {
-            type: "string",
-            enum: [
-              "screenshot",
-              "left_click",
-              "double_click",
-              "right_click",
-              "mouse_move",
-              "type",
-              "key",
-              "scroll",
-              "left_click_drag",
-              "wait",
-            ],
-            description: "The action to perform.",
-          },
-          coordinate: {
-            type: "array",
-            items: {
-              type: "number"
-            },
-            description: "[X, Y] coordinates for mouse actions. X is horizontal (0-1023), Y is vertical (0-767).",
-          },
-          start_coordinate: {
-            type: "array",
-            items: {
-              type: "number"
-            },
-            description: "Starting [X, Y] coordinates for drag action.",
-          },
-          text: {
-            type: "string",
-            description: "Text to type or key to press.",
-          },
-          delta_x: {
-            type: "number",
-            description: "Horizontal scroll delta (default: 0).",
-          },
-          delta_y: {
-            type: "number",
-            description: "Vertical scroll delta. Positive values scroll down, negative values scroll up.",
-          },
-          duration: {
-            type: "number",
-            description: "Duration to wait in seconds (max 2).",
-          },
-        },
-        required: ["action"],
-      },
-    },
-  },
-  {
-    type: "function",
-    function: {
-      name: "bash_command",
-      description: "Execute a bash command in the Linux terminal.",
-      parameters: {
-        type: "object",
-        properties: {
-          command: {
-            type: "string",
-            description: "The bash command to execute.",
-          },
-        },
-        required: ["command"],
-      },
-    },
-  },
-];
+Kiedy skończysz całe zadanie wyślij wiadomość zawierającą komendę !isfinish aby zakończyć pętlę`;
 
 export async function POST(request: Request) {
   const { messages, sandboxId } = await request.json();
@@ -381,7 +186,7 @@ export async function POST(request: Request) {
 
         // Clean messages for NVIDIA API compatibility
         const cleanedMessages = messages.map((msg: any) => {
-          const { id, toolCalls, ...cleanMsg } = msg;
+          const { toolCalls, ...cleanMsg } = msg;
           // NVIDIA requires content to be a string, not null/undefined
           if (cleanMsg.content === null || cleanMsg.content === undefined) {
             cleanMsg.content = "";
@@ -401,8 +206,6 @@ export async function POST(request: Request) {
           ...cleanedMessages,
         ];
 
-        // Infinite loop - AI decides when to stop by not calling more tools
-        let wasScreenshotAction = false;
         while (true) {
 
           const stream = await nvidia.chat.completions.create({
@@ -415,19 +218,12 @@ export async function POST(request: Request) {
 
           let fullText = "";
           let toolCalls: any[] = [];
-          let finishReason = null;
 
           for await (const chunk of stream) {
             if (chunk.choices && chunk.choices.length > 0) {
               const choice = chunk.choices[0];
               const delta = choice.delta;
 
-              // Track finish reason
-              if (choice.finish_reason) {
-                finishReason = choice.finish_reason;
-              }
-
-              // Handle content
               if (delta.content) {
                 fullText += delta.content;
                 sendEvent({
@@ -544,15 +340,12 @@ export async function POST(request: Request) {
           });
           
 
-          // FALLBACK: Parse text for tool calls if model didn't use native function calling
           let textBeforeAction = "";
-          let textAfterAction = "";
           if (toolCalls.length === 0 && fullText) {
             const parsed = parseTextToolCall(fullText);
             if (parsed) {
               toolCalls = [parsed.toolCall];
               textBeforeAction = parsed.textBefore;
-              textAfterAction = parsed.textAfter;
             }
           }
 
@@ -564,11 +357,6 @@ export async function POST(request: Request) {
             // This ensures ONE action per iteration
             const firstToolCall = toolCalls[0];
             
-            // Log if there are multiple tool calls (we'll only execute first)
-            if (toolCalls.length > 1) {
-            }
-            
-            // CRITICAL: Send text message BEFORE action if there's text before the action
             if (textBeforeAction) {
               
               // Add text-only message to history
@@ -621,7 +409,6 @@ export async function POST(request: Request) {
 
                   switch (action) {
                     case "screenshot": {
-                      wasScreenshotAction = true;
                       const response = await kernelClient.browsers.computer.captureScreenshot(desktop.session_id);
                       const blob = await response.blob();
                       const buffer = Buffer.from(await blob.arrayBuffer());
@@ -631,10 +418,6 @@ export async function POST(request: Request) {
                       const height = resolution.y;
                       const base64Image = buffer.toString("base64");
 
-                      const vBounds = { top: 255, middle: 511 };
-                      const hBounds = { left: 341, center: 682 };
-
-                      // Store screenshot data for later use
                       screenshotData = {
                         type: "image",
                         data: base64Image,
