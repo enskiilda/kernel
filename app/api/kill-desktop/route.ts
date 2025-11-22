@@ -1,9 +1,6 @@
 import { killDesktop } from "@/lib/e2b/utils";
 
-// Common handler for both GET and POST requests
 async function handleKillDesktop(request: Request) {
-  // Enable CORS to ensure this works across all browsers
-
   const { searchParams } = new URL(request.url);
   const sandboxId = searchParams.get("sandboxId");
 
